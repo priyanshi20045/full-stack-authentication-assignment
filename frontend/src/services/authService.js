@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://full-stack-authentication-assignment.onrender.com";
 
 const authApi = axios.create({
   baseURL: API_URL,
   withCredentials: true,
 });
 const protectedApi = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://full-stack-authentication-assignment.onrender.com/api",
   withCredentials: true,
 });
 protectedApi.interceptors.request.use((config) => {
