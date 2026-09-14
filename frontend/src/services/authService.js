@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL = "https://full-stack-authentication-assignment.onrender.com";
-
+const API_URL =
+  "https://full-stack-authentication-assignment.onrender.com/api/auth";
 const authApi = axios.create({
   baseURL: API_URL,
   withCredentials: true,
